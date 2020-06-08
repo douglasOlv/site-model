@@ -2,20 +2,25 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import Image from "../components/image"
+
+import Slider from "../components/Slider"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <Slider />
+    <div className="flex flex-col px-10 py-10 ">
+      <h1
+        className="text-purple-800 font-semibold
+        text-5xl
+    "
+      >
+        Home
+      </h1>
+      <p className="text-gray-800">Welcome to your new Gatsby site.</p>
     </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
   </Layout>
 )
 

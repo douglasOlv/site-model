@@ -1,0 +1,17 @@
+.square {
+  width: 3rem;
+  height: 0.4rem;
+  border-radius: 0;
+  border: solid 1px gray;
+}
+.square-active {
+  background: #673ab7;
+  opacity: 1;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #673ab7;
+  height: 100%;
+  width: 8%;
+  top: 5%;
+}
