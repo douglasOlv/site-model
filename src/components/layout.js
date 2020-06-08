@@ -26,26 +26,25 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
+
+      <main>{children}</main>
+      <footer>
+        <div className="bg-gray-800 px-8 pb-8 pt-5">
+          <div className="w-1/3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+            doloremque ipsum mollitia beatae provident magnam non tenetur odio
+            sunt quisquam?
+          </div>
+        </div>
+        <div className="bg-gray-900 flex content-end flex-wrap p-2">
+          <span>
+            Copyright © 2020,{" "}
+            <a href="https://github.com/douglasOlv">Douglas Oliveira</a>
+          </span>
+        </div>
+      </footer>
     </>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Layout
