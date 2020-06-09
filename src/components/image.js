@@ -55,6 +55,10 @@ const Image = ({ imageName }) => {
       return <Img fluid={foto02.childImageSharp.fluid} />
     case "foto03":
       return <Img fluid={foto03.childImageSharp.fluid} />
+    case "foto03":
+      return <Img fluid={foto03.childImageSharp.fluid} />
+    default:
+      return null
   }
 }
 

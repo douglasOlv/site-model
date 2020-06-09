@@ -6,8 +6,10 @@
  */
 
 import React from "react"
-import PropTypes from "prop-types"
+
 import { useStaticQuery, graphql } from "gatsby"
+
+import { FaGithub } from "react-icons/fa"
 
 import Header from "./header"
 import "./layout.css"
@@ -29,11 +31,16 @@ const Layout = ({ children }) => {
 
       <main>{children}</main>
       <footer>
-        <div className="bg-gray-800 px-8 pb-8 pt-5">
-          <div className="w-1/3">
+        <div className="bg-gray-800 px-8 pb-8 pt-5 flex flex-col-reverse lg:flex-row lg:justify-between">
+          <div className="lg:w-1/3 text-justify">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
             doloremque ipsum mollitia beatae provident magnam non tenetur odio
             sunt quisquam?
+          </div>
+          <div className="pb-4 ml-auto">
+            <a href="https://github.com/douglasOlv">
+              <FaGithub size={40} />
+            </a>
           </div>
         </div>
         <div className="bg-gray-900 flex content-end flex-wrap p-2">
